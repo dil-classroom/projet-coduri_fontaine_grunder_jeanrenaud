@@ -46,7 +46,7 @@
   <!-- Excludes all 'module-info.java' files              -->
   <!-- See https://checkstyle.org/config_filefilters.html -->
   <module name="BeforeExecutionExclusionFileFilter">
-    <property name="fileNamePattern" value="module\-info\.java$"/>
+    <property name="fileNamePattern" value=".*[\\/]src[\\/]test[\\/].*$"/>
   </module>
 
   <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
@@ -124,7 +124,7 @@
 
     <!-- Checks for imports                              -->
     <!-- See https://checkstyle.org/config_imports.html -->
-    <module name="AvoidStarImport"/>
+<!--    <module name="AvoidStarImport"/>-->
     <module name="IllegalImport"/>
     <!-- defaults to sun.* packages -->
     <module name="RedundantImport"/>
